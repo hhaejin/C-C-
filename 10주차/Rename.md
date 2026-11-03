@@ -7,6 +7,7 @@ islower : 소문자
 strlen : 길이 계산
 strcpy : 복사
 strcat : 연결
+strcmp : 비교
 
 이진탐색 : 양쪽을 더하고 2로 나눈 수부터 시작.
 타깃보다 중간값이 크면 오른쪽
