@@ -1,0 +1,87 @@
+1번 문제 - 정수데이터를 저장 및 출력한다고 했을 때 @에 들어갈 적절한 코드는?
+union Data{
+  int i;
+  float f;
+};
+int main(){
+  union Data data;
+  (@)
+  printf( "(@) : %d\n", (@) );
+
+return 0;
+}
+
+1) data(i)
+2) data_i
+3) data.i
+4) data[i]
+
+
+2번 문제 - 다음 구조체 코드의 결과로 옳은 것은?
+#include <stdio.h>
+struct Data{
+  int num;
+};
+int main(){
+  struct Data d = {100};
+  struct Data *p;
+  
+  p = &d;
+  printf("%d",p->num);
+  return 0;
+}
+
+1) 0
+2) 10
+3) 100
+4) 1000
+
+
+3번 문제 - 구조체 배열 설명으로 적절하지 않은 것은?
+1) 구조체는 하나의 정보를 저장하는 구조로 구조체 변수 하나에 해당하는 멤버 변수들에 값을 저장한다.
+2) 구조체 배열은 같은 자료형의 구조체 여러 개를 연속적으로 저장하는 방법이다.
+3) 구조체는 함수의 인수 또는 반환값으로 사용할 수 있다.
+4) 구조체형을 나타내기 위해 struct 키워드를 추가하여 사용한다.
+
+
+4번 문제 - 다음 공용체 코드의 결과로 옳은 것은?
+#include <stdio.h>
+union Data{
+  int a;
+  int b;
+};
+int main(){
+  union Data d;
+  d.a=20;
+  printf("%d\n", d.a);
+  d.b=10;
+  printf("%d\n", d.b);
+
+  return 0;
+}
+
+1) 10 10
+2) 20 20
+3) 10 20
+4) 20 10
+
+
+5번 문제 - 다음 열거형 코드의 결과로 옳은 것은?
+#include <stdio.h>
+enum Test {
+  A=3;
+  B,
+  C,
+  D
+};
+int main(){
+  for(int i=A; i<=D; i++){
+    printf("%d",i);
+  }
+  return 0;
+}
+
+1) 3 0 1 2
+2) 3 3 3 3
+3) 3 2 1 0
+4) 3 4 5 6
